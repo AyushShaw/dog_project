@@ -11813,7 +11813,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[84]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.datasets</span> <span class="k">import</span> <span class="n">load_files</span>       
@@ -11857,6 +11857,17 @@ div#notebook {
 <div class="prompt"></div>
 
 
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>Using TensorFlow backend.
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>There are 133 total dog categories.
 There are 8351 total dog images.
@@ -11883,7 +11894,7 @@ There are 836 test dog images.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[85]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
@@ -11934,7 +11945,7 @@ There are 836 test dog images.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[86]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">cv2</span>                
@@ -12019,7 +12030,7 @@ There are 836 test dog images.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[87]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># returns &quot;True&quot; if face is detected in image stored at img_path</span>
@@ -12052,7 +12063,7 @@ There are 836 test dog images.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[88]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">human_files_short</span> <span class="o">=</span> <span class="n">human_files</span><span class="p">[:</span><span class="mi">100</span><span class="p">]</span>
@@ -12111,6 +12122,9 @@ Answer : 11.0
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Question 2:</strong> This algorithmic choice necessitates that we communicate to the user that we accept human images only when they provide a clear view of a face (otherwise, we risk having unneccessarily frustrated users!). In your opinion, is this a reasonable expectation to pose on the user? If not, can you think of a way to detect humans in images that does not necessitate an image with a clearly presented face?</p>
 <p><strong>Answer:</strong></p>
+<blockquote><p>Well to "communicate to the user that we accept human images only when they provide a clear view of a face", has to be done(for now) for the Best user Experiance, as matter of fact we should also communicate to the user that we accept images should be taken in proper lighting also, elsewise we do risk having unneccessarily frustrated users-base!</p>
+<p>this is a reasonable expectation to pose on the user.</p>
+</blockquote>
 <p>We suggest the face detector from OpenCV as a potential way to detect human images in your algorithm, but you are free to explore other approaches, especially approaches that make use of deep learning :).  Please use the code cell below to design and test your own face detection algorithm.  If you decide to pursue this <em>optional</em> task, report performance on each of the datasets.</p>
 
 </div>
@@ -12118,7 +12132,7 @@ Answer : 11.0
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[89]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## (Optional) TODO: Report the performance of another  </span>
@@ -12248,7 +12262,7 @@ Answer : 11.0
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[90]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">keras.applications.resnet50</span> <span class="k">import</span> <span class="n">ResNet50</span>
@@ -12258,6 +12272,25 @@ Answer : 11.0
 </pre></div>
 
 </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Downloading data from https://github.com/fchollet/deep-learning-models/releases/download/v0.2/resnet50_weights_tf_dim_ordering_tf_kernels.h5
+102858752/102853048 [==============================] - 1s 0us/step
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -12286,7 +12319,7 @@ $$</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[91]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">keras.preprocessing</span> <span class="k">import</span> <span class="n">image</span>                  
@@ -12323,7 +12356,7 @@ $$</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[92]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">keras.applications.resnet50</span> <span class="k">import</span> <span class="n">preprocess_input</span><span class="p">,</span> <span class="n">decode_predictions</span>
@@ -12351,7 +12384,7 @@ $$</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[93]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">### returns &quot;True&quot; if a dog is detected in the image stored at img_path</span>
@@ -12381,7 +12414,7 @@ $$</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[94]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">### TODO: Test the performance of the dog_detector function</span>
@@ -12398,9 +12431,9 @@ $$</p>
 
 <span class="n">human_percent</span> <span class="o">=</span> <span class="p">(</span><span class="n">human_score</span><span class="o">/</span><span class="n">n</span><span class="p">)</span><span class="o">*</span><span class="mi">100</span>
 <span class="n">dog_percent</span> <span class="o">=</span> <span class="p">(</span><span class="n">dog_score</span><span class="o">/</span><span class="n">n</span><span class="p">)</span><span class="o">*</span><span class="mi">100</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;What percentage of the first 100 images in human_files have a detected human face? &quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;What percentage of the first 100 images in human_files have a detected dog face? &quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span> <span class="s2">&quot;Answer : </span><span class="si">{}</span><span class="s2">&quot;</span> <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">human_percent</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;What percentage of the first 100 images in dog_files have a detected human face? &quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;What percentage of the first 100 images in dog_files have a detected dog face? &quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span> <span class="s2">&quot;Answer : </span><span class="si">{}</span><span class="s2">&quot;</span> <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">dog_percent</span><span class="p">))</span>
 </pre></div>
 
@@ -12418,9 +12451,9 @@ $$</p>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>What percentage of the first 100 images in human_files have a detected human face? 
+<pre>What percentage of the first 100 images in human_files have a detected dog face? 
 Answer : 0.0
-What percentage of the first 100 images in dog_files have a detected human face? 
+What percentage of the first 100 images in dog_files have a detected dog face? 
 Answer : 100.0
 </pre>
 </div>
@@ -12602,7 +12635,10 @@ Answer : 100.0
 <p>We have imported some Python modules to get you started, but feel free to import as many modules as you need.  If you end up getting stuck, here's a hint that specifies a model that trains relatively fast on CPU and attains &gt;1% test accuracy in 5 epochs:</p>
 <p><img src="images/sample_cnn.png" alt="Sample CNN"></p>
 <p><strong>Question 4:</strong> Outline the steps you took to get to your final CNN architecture and your reasoning at each step.  If you chose to use the hinted architecture above, describe why you think that CNN architecture should work well for the image classification task.</p>
-<p><strong>Answer:</strong></p>
+<p><strong>Answer:</strong> 
+In mathematics convolution is a mathematical operation on two functions (f and g) to produce a third function, that is typically viewed as a modified version of one of the original functions.At the beginning, it might only be able to pick up the higher level features, but as we train the model, it would get better at connect these features(convolution) together for a complete "big picture" of the image.</p>
+<p>MaxPooling is used after Conv2D to reduce the amount of parameters, thus computation in the network.</p>
+<p>Afterwards, the output of the third pooling layer is converted to vectors by the GAP layer and passed through a dense layer which uses a softmax activation for classification.</p>
 
 </div>
 </div>
@@ -13486,6 +13522,7 @@ test_{network} = bottleneck_features['test']</code></pre>
 </code></pre>
 <p><strong>Question 5:</strong> Outline the steps you took to get to your final CNN architecture and your reasoning at each step.  Describe why you think the architecture is suitable for the current problem.</p>
 <p><strong>Answer:</strong></p>
+<p>Lol, It took me straight 6hrs to decide on this. All of them are well trained and produced amazing results. But Had to Go with VGG19. It had the input size same as of our training images which is 224x224.The GAP layer reduces the parameters for training and detects only reasonable features.(Flatten was too much os a hustle). Doggo provides around 78% accuracy that is much improved as to the VGG16 architecture(43%)</p>
 
 </div>
 </div>
@@ -13961,6 +13998,19 @@ Epoch 20/20
 <h3 id="(IMPLEMENTATION)-Test-Your-Algorithm-on-Sample-Images!">(IMPLEMENTATION) Test Your Algorithm on Sample Images!<a class="anchor-link" href="#(IMPLEMENTATION)-Test-Your-Algorithm-on-Sample-Images!">&#182;</a></h3><p>Test your algorithm at least six images on your computer.  Feel free to use any images you like.  Use at least two human and two dog images.</p>
 <p><strong>Question 6:</strong> Is the output better than you expected :) ?  Or worse :( ?  Provide at least three possible points of improvement for your algorithm.</p>
 <p><strong>Answer:</strong></p>
+<p>The Algorithm seems to work like gg. Felt soo cool..</p>
+<p>The good parts:</p>
+<ul>
+<li>It did reject Cats(which is good). </li>
+<li>Can recognize shaking images like one of frooty my doggo</li>
+</ul>
+<p>The parts to work on:</p>
+<ul>
+<li>The human detector</li>
+<li>Image Augmentations( make it super algo)</li>
+<li>we could improve performace of the algorithm using cython </li>
+<li>More Fine-tuning the model's training hyperparametes like epoch, learning rate...</li>
+</ul>
 
 </div>
 </div>
